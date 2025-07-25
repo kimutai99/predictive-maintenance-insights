@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Failure Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Machine Failure Prediction Dashboard</h1>
+        </header>
+        <main>
+            <div class="machine-list-container">
+                <h2>Monitored Machines</h2>
+                <ul id="machine-list"></ul>
+            </div>
+            <div class="machine-details-container">
+                <h2 id="machine-details-title">Machine Details</h2>
+                <div id="machine-details-content">
+                    <p>Select a machine to view its details.</p>
+                </div>
+                <div class="charts-container">
+                    <canvas id="temp-chart"></canvas>
+                    <canvas id="vibration-chart"></canvas>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
