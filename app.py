@@ -236,14 +236,14 @@ def check_password():
         st.title(_("login_title"))
         st.write(_("login_intro"))
         
-        st.info("Username: `Data Professionals` | Password: `Hello World`")
+        st.info("Username: `maintenance` | Password: `predictive123`")
         
         username = st.text_input(_("username_prompt"), key="username_input")
         password = st.text_input(_("password_prompt"), type="password", key="password_input")
 
         if st.button(_("login_button")):
-            correct_username = os.environ.get("APP_USERNAME", "Data Professionals")
-            correct_password = os.environ.get("APP_PASSWORD", "Hello World")
+            correct_username = os.environ.get("APP_USERNAME", "maintenance")
+            correct_password = os.environ.get("APP_PASSWORD", "predictive123")
             if username == correct_username and password == correct_password:
                 st.session_state["password_correct"] = True
                 st.session_state["username_for_display"] = username
