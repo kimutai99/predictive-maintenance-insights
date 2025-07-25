@@ -17,174 +17,203 @@ IMAGE_OPERATING_PATH = "images/mining_equipment_operating.jpg"
 IMAGE_FAILED_PATH = "images/failed_mining_equipment.jpg"
 # --- LANGUAGE TRANSLATIONS ---
 translations = {
-    "en": {
-        "page_title": "Machine Failure Prediction",
-        "login_title": "Machine Failure Prediction",
-        "login_intro": "This application predicts machine failure using sensor data.",
-        "username_prompt": "Username",
-        "password_prompt": "Password",
-        "login_button": "Login",
-        "incorrect_credentials_error": "Incorrect username or password.",
-        "welcome_message": "Welcome",
-        "logout_button": "Log Out",
-        "data_source_title": "Data Source",
-        "upload_prompt": "Upload your own CSV",
-        "upload_success": "Successfully loaded uploaded data!",
-        "download_sample_data": "Download Sample Data",
-        "home_tab": "Home",
-        "dashboard_tab": "Dashboard",
-        "prediction_tab": "Prediction",
-        "stats_tab": "Statistical Analysis",
-        "data_viewer_tab": "Data Viewer",
-        "readme_tab": "Read Me",
-        "home_title": "Predictive Maintenance for Mining Equipment",
-        "project_summary_header": "Project Summary",
-        "problem_statement": "**The Problem:** Unplanned equipment failures in the mining industry are a major source of operational disruption, leading to significant financial losses and safety risks. Maintenance is often reactive, performed only after a breakdown occurs.",
-        "solution_statement": "**The Solution:** This project implements a predictive maintenance solution using machine learning. By analyzing real-time sensor data from mining equipment, the system can accurately predict which machines are likely to fail within the next 14 days and identify the specific component that is at risk.",
-        "impact_statement": "**The Impact:** This proactive approach allows maintenance teams to schedule repairs *before* failures happen, minimizing downtime, reducing maintenance costs, and improving overall operational efficiency and safety.",
-        "dashboard_header": "Fleet Health Dashboard",
-        "dashboard_filters_header": "Dashboard Filters",
-        "machine_type_filter_label": "Filter by Machine Type",
-        "manufacturer_filter_label": "Filter by Manufacturer",
-        "age_filter_label": "Filter by Age Range",
-        "kpi_header": "Key Performance Indicators",
-        "total_machines_kpi": "Total Machines",
-        "healthy_machines_kpi": "Healthy Machines",
-        "at_risk_kpi": "Machines at High/Critical Risk",
-        "fleet_overview_header": "Fleet Overview",
-        "machine_type_dist_title": "Distribution of Machine Types",
-        "machine_age_dist_title": "Distribution of Machine Ages",
-        "failure_prob_dist_title": "Distribution of Failure Probability Across the Fleet",
-        "no_data_warning": "No data available for the selected filters.",
-        "prediction_header": "Machine-Specific Predictions",
-        "machines_at_risk_header": "Machines at Risk of Failure",
-        "predict_component_header": "Predict Failing Component",
-        "select_machine_prompt": "Select Machine ID from Risk List",
-        "predicted_component_error": "**Predicted Failing Component:**",
-        "critical_severity_warning": "**Predicted Failure Window:** Within the next 7 days. Immediate inspection required.",
-        "high_severity_warning": "**Predicted Failure Window:** Within the next 14 days. Schedule maintenance soon.",
-        "medium_severity_info": "**Recommendation:** Monitor this machine closely. Increased risk detected.",
-        "no_risk_success": "No machines are currently at risk of failure.",
-        "stats_header": "Statistical Analysis",
-        "select_analysis_type": "Select Analysis Type",
-        "univariate_analysis": "Univariate Analysis",
-        "bivariate_analysis": "Bivariate Analysis",
-        "linear_regression": "Linear Regression",
-        "select_variable_prompt": "Select a variable",
-        "qualitative_analysis_header": "**Qualitative Variable Analysis**",
-        "quantitative_analysis_header": "**Quantitative Variable Analysis**",
-        "normality_analysis_header": "Normality Analysis",
-        "shapiro_wilk_test": "Shapiro-Wilk Test",
-        "normality_test_success": "The data appears to be normally distributed.",
-        "normality_test_warning": "The data does not appear to be normally distributed.",
-        "bivariate_analysis_header": "Bivariate Analysis",
-        "select_first_variable": "Select the first variable",
-        "select_second_variable": "Select the second variable",
-        "quant_vs_quant_header": "**Quantitative vs. Quantitative Analysis**",
-        "qual_vs_qual_header": "**Qualitative vs. Qualitative Analysis**",
-        "chi_square_test": "Chi-square Test",
-        "qual_vs_quant_analysis_header": "Analysis of {quant_var} by {qual_var}",
-        "ttest": "T-test",
-        "anova": "ANOVA",
-        "linear_regression_header": "Linear Regression Analysis",
-        "select_dependent_variable": "Select the dependent variable (must be quantitative)",
-        "select_independent_variables": "Select independent variables",
-        "regression_interpretation_header": "Interpretation of Regression Results",
-        "regression_assumptions_header": "Linear Regression Assumption Checks",
-        "linearity_check": "1. Linearity Check",
-        "homoscedasticity_check": "2. Homoscedasticity Check",
-        "normality_of_residuals_check": "3. Normality of Residuals Check",
-        "data_viewer_header": "About the Data & Models",
-        "dataset_overview_header": "Dataset Overview",
-        "model_performance_header": "Model Performance",
-        "data_dictionary_header": "Data Dictionary",
-        "raw_data_explorer_header": "Raw Data Explorer",
-        "readme_title": "About This Project",
-    },
-    "fr": {
-        "page_title": "Prédiction de Pannes de Machines",
-        "login_title": "Prédiction de Pannes de Machines",
-        "login_intro": "Cette application prédit les pannes de machines à l'aide des données de capteurs.",
-        "username_prompt": "Nom d'utilisateur",
-        "password_prompt": "Mot de passe",
-        "login_button": "Se connecter",
-        "incorrect_credentials_error": "Nom d'utilisateur ou mot de passe incorrect.",
-        "welcome_message": "Bienvenue",
-        "logout_button": "Se déconnecter",
-        "data_source_title": "Source de Données",
-        "upload_prompt": "Téléchargez votre propre CSV",
-        "upload_success": "Données téléchargées avec succès !",
-        "download_sample_data": "Télécharger un jeu de données d'exemple",
-        "home_tab": "Accueil",
-        "dashboard_tab": "Tableau de Bord",
-        "prediction_tab": "Prédiction",
-        "stats_tab": "Analyse Statistique",
-        "data_viewer_tab": "Visualiseur de Données",
-        "readme_tab": "À Propos",
-        "home_title": "Maintenance Prédictive pour Équipement Minier",
-        "project_summary_header": "Résumé du Projet",
-        "problem_statement": "**Le Problème :** Les pannes d'équipement imprévues dans l'industrie minière sont une source majeure de perturbation opérationnelle, entraînant des pertes financières importantes et des risques pour la sécurité. La maintenance est souvent réactive, effectuée seulement après une panne.",
-        "solution_statement": "**La Solution :** Ce projet met en œuvre une solution de maintenance prédictive utilisant l'apprentissage automatique. En analysant les données des capteurs en temps réel de l'équipement minier, le système peut prédire avec précision quelles machines sont susceptibles de tomber en panne dans les 14 prochains jours et identifier le composant spécifique à risque.",
-        "impact_statement": "**L'Impact :** Cette approche proactive permet aux équipes de maintenance de planifier les réparations *avant* que les pannes ne se produisent, minimisant ainsi les temps d'arrêt, réduisant les coûts de maintenance et améliorant l'efficacité opérationnelle globale et la sécurité.",
-        "dashboard_header": "Tableau de Bord de la Santé de la Flotte",
-        "dashboard_filters_header": "Filtres du Tableau de Bord",
-        "machine_type_filter_label": "Filtrer par Type de Machine",
-        "manufacturer_filter_label": "Filtrer par Fabricant",
-        "age_filter_label": "Filtrer par Tranche d'Âge",
-        "kpi_header": "Indicateurs Clés de Performance",
-        "total_machines_kpi": "Total des Machines",
-        "healthy_machines_kpi": "Machines en Bonne Santé",
-        "at_risk_kpi": "Machines à Risque Élevé/Critique",
-        "fleet_overview_header": "Aperçu de la Flotte",
-        "machine_type_dist_title": "Distribution des Types de Machines",
-        "machine_age_dist_title": "Distribution de l'Âge des Machines",
-        "failure_prob_dist_title": "Distribution de la Probabilité de Panne dans la Flotte",
-        "no_data_warning": "Aucune donnée disponible pour les filtres sélectionnés.",
-        "prediction_header": "Prédictions Spécifiques à la Machine",
-        "machines_at_risk_header": "Machines à Risque de Panne",
-        "predict_component_header": "Prédire le Composant Défaillant",
-        "select_machine_prompt": "Sélectionnez l'ID de la machine dans la liste des risques",
-        "predicted_component_error": "**Composant Défaillant Prédit :**",
-        "critical_severity_warning": "**Fenêtre de Panne Prédite :** Dans les 7 prochains jours. Inspection immédiate requise.",
-        "high_severity_warning": "**Fenêtre de Panne Prédite :** Dans les 14 prochains jours. Planifiez la maintenance bientôt.",
-        "medium_severity_info": "**Recommandation :** Surveillez cette machine de près. Risque accru détecté.",
-        "no_risk_success": "Aucune machine n'est actuellement à risque de panne.",
-        "stats_header": "Analyse Statistique",
-        "select_analysis_type": "Sélectionnez le Type d'Analyse",
-        "univariate_analysis": "Analyse Univariée",
-        "bivariate_analysis": "Analyse Bivariée",
-        "linear_regression": "Régression Linéaire",
-        "select_variable_prompt": "Sélectionnez une variable",
-        "qualitative_analysis_header": "**Analyse de Variable Qualitative**",
-        "quantitative_analysis_header": "**Analyse de Variable Quantitative**",
-        "normality_analysis_header": "Analyse de Normalité",
-        "shapiro_wilk_test": "Test de Shapiro-Wilk",
-        "normality_test_success": "Les données semblent être normalement distribuées.",
-        "normality_test_warning": "Les données ne semblent pas être normalement distribuées.",
-        "bivariate_analysis_header": "Analyse Bivariée",
-        "select_first_variable": "Sélectionnez la première variable",
-        "select_second_variable": "Sélectionnez la deuxième variable",
-        "quant_vs_quant_header": "**Analyse Quantitative vs. Quantitative**",
-        "qual_vs_qual_header": "**Analyse Qualitative vs. Qualitative**",
-        "chi_square_test": "Test du Chi-carré",
-        "qual_vs_quant_analysis_header": "Analyse de {quant_var} par {qual_var}",
-        "ttest": "Test T",
-        "anova": "ANOVA",
-        "linear_regression_header": "Analyse de Régression Linéaire",
-        "select_dependent_variable": "Sélectionnez la variable dépendante (doit être quantitative)",
-        "select_independent_variables": "Sélectionnez les variables indépendantes",
-        "regression_interpretation_header": "Interprétation des Résultats de la Régression",
-        "regression_assumptions_header": "Vérification des Hypothèses de la Régression Linéaire",
-        "linearity_check": "1. Vérification de la Linéarité",
-        "homoscedasticity_check": "2. Vérification de l'Homoscédasticité",
-        "normality_of_residuals_check": "3. Vérification de la Normalité des Résidus",
-        "data_viewer_header": "À Propos des Données & Modèles",
-        "dataset_overview_header": "Aperçu du Jeu de Données",
-        "model_performance_header": "Performance du Modèle",
-        "data_dictionary_header": "Dictionnaire de Données",
-        "raw_data_explorer_header": "Explorateur de Données Brutes",
-        "readme_title": "À Propos de Ce Projet",
-    }
+
+  "en": {
+    "page_title": "Machine Failure Prediction",
+    "login_title": "Machine Failure Prediction",
+    "login_intro": "This application predicts machine failure using sensor data.",
+    "username_prompt": "Username",
+    "password_prompt": "Password",
+    "login_button": "Login",
+    "incorrect_credentials_error": "Incorrect username or password.",
+    "welcome_message": "Welcome",
+    "logout_button": "Log Out",
+    "data_source_title": "Data Source",
+    "upload_prompt": "Upload your own CSV",
+    "upload_success": "Successfully loaded uploaded data!",
+    "download_sample_data": "Download Sample Data",
+    "home_tab": "Home",
+    "dashboard_tab": "Dashboard",
+    "prediction_tab": "Prediction",
+    "stats_tab": "Statistical Analysis",
+    "data_viewer_tab": "Data Viewer",
+    "readme_tab": "Read Me",
+    
+    "home_title": "🔧 **Predictive Maintenance for Mining Equipment**",
+    "project_summary_header": "⚙️ **Project Summary: Predictive Maintenance for Mining Equipment**",
+    "problem_statement": "📌 **The Challenge:**\nIn the mining industry, unplanned equipment failures are a critical concern, causing major operational disruptions, significant financial losses, and heightened safety risks. Traditional maintenance is reactive—addressed only after a breakdown—resulting in unnecessary downtime and inefficient resource use.",
+    "solution_statement": "💡 **The Solution:**\nThis project implements an advanced **predictive maintenance system** powered by **machine learning**. By analyzing real-time sensor data from mining machinery—such as temperature, vibration, and pressure—the system can predict:\n\n- Whether a machine is likely to fail within the next 14 days.\n- Which specific component (e.g., engine, transmission, hydraulic system) is at risk of failure.",
+    "impact_statement": "🚀 **The Impact:**\nThis data-driven, proactive strategy enables:\n\n- **Scheduled, timely maintenance** to avert unexpected breakdowns.\n- **Significant cost reductions** in maintenance and inventory management.\n- **Increased machine availability** and enhanced operational efficiency.\n- **Safer work environments** by detecting potential failures early, safeguarding personnel and resources.",
+    "dashboard_header": "Fleet Health Dashboard",
+    "dashboard_filters_header": "Dashboard Filters",
+    "machine_type_filter_label": "Filter by Machine Type",
+    "manufacturer_filter_label": "Filter by Manufacturer",
+    "age_filter_label": "Filter by Age Range",
+    "kpi_header": "Key Performance Indicators",
+    "total_machines_kpi": "Total Machines",
+    "healthy_machines_kpi": "Healthy Machines",
+    "at_risk_kpi": "Machines at High/Critical Risk",
+    "fleet_overview_header": "Fleet Overview",
+    "machine_type_dist_title": "Distribution of Machine Types",
+    "machine_age_dist_title": "Distribution of Machine Ages",
+    "failure_prob_dist_title": "Distribution of Failure Probability Across the Fleet",
+    "no_data_warning": "No data available for the selected filters.",
+    "prediction_header": "Machine-Specific Predictions",
+    "machines_at_risk_header": "Machines at Risk of Failure",
+    "predict_component_header": "Predict Failing Component",
+    "select_machine_prompt": "Select Machine ID from Risk List",
+    "predicted_component_error": "**Predicted Failing Component:**",
+    "critical_severity_warning": "**Predicted Failure Window:** Within the next 7 days. Immediate inspection required.",
+    "high_severity_warning": "**Predicted Failure Window:** Within the next 14 days. Schedule maintenance soon.",
+    "medium_severity_info": "**Recommendation:** Monitor this machine closely. Increased risk detected.",
+    "no_risk_success": "No machines are currently at risk of failure.",
+    "stats_header": "Statistical Analysis",
+    "select_analysis_type": "Select Analysis Type",
+    "univariate_analysis": "Univariate Analysis",
+    "bivariate_analysis": "Bivariate Analysis",
+    "linear_regression": "Linear Regression",
+    "select_variable_prompt": "Select a variable",
+    "qualitative_analysis_header": "**Qualitative Variable Analysis**",
+    "quantitative_analysis_header": "**Quantitative Variable Analysis**",
+    "normality_analysis_header": "Normality Analysis",
+    "shapiro_wilk_test": "Shapiro-Wilk Test",
+    "normality_test_success": "The data appears to be normally distributed.",
+    "normality_test_warning": "The data does not appear to be normally distributed.",
+    "bivariate_analysis_header": "Bivariate Analysis",
+    "select_first_variable": "Select the first variable",
+    "select_second_variable": "Select the second variable",
+    "quant_vs_quant_header": "**Quantitative vs. Quantitative Analysis**",
+    "qual_vs_qual_header": "**Qualitative vs. Qualitative Analysis**",
+    "chi_square_test": "Chi-square Test",
+    "qual_vs_quant_analysis_header": "Analysis of {quant_var} by {qual_var}",
+    "ttest": "T-test",
+    "anova": "ANOVA",
+    "linear_regression_header": "Linear Regression Analysis",
+    "select_dependent_variable": "Select the dependent variable (must be quantitative)",
+    "select_independent_variables": "Select independent variables",
+    "regression_interpretation_header": "Interpretation of Regression Results",
+    "regression_assumptions_header": "Linear Regression Assumption Checks",
+    "linearity_check": "1. Linearity Check",
+    "homoscedasticity_check": "2. Homoscedasticity Check",
+    "normality_of_residuals_check": "3. Normality of Residuals Check",
+    "data_viewer_header": "About the Data & Models",
+    "dataset_overview_header": "Dataset Overview",
+    "model_performance_header": "Model Performance",
+    "data_dictionary_header": "Data Dictionary",
+    "raw_data_explorer_header": "Raw Data Explorer",
+    "readme_title": "About This Project",
+            "license_header": "🛡️ License",
+        "license_text": "This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and share this project with proper attribution.",
+        "about_me_header": "🌟 About Me",
+        "about_me_text": "Hi there! I'm **Brian Kimutai** — a Data Scientist, Data Analyst, and Data Engineer currently freelancing on multiple data projects. I’m passionate about building smart data solutions and sharing insights that drive real impact.",
+        "stay_connected_header": "☕ Stay Connected",
+        "stay_connected_text": "Let's stay in touch! Feel free to connect with me on the following platforms:",
+        "linkedin_badge_url": "https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white",
+        "linkedin_profile_url": "https://www.linkedin.com/in/brian-kimutai-0888352b6/",
+        "portfolio_badge_url": "https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=google-chrome&logoColor=white",
+        "portfolio_url": "https://kimutai99.github.io/briankimutai.github.io/",
+        "github_badge_url": "https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white",
+        "github_profile_url": "https://github.com/kimutai99"
+  },
+  "fr": {
+    "page_title": "Prédiction de Pannes de Machines",
+    "login_title": "Prédiction de Pannes de Machines",
+    "login_intro": "Cette application prédit les pannes de machines à l'aide des données de capteurs.",
+    "username_prompt": "Nom d'utilisateur",
+    "password_prompt": "Mot de passe",
+    "login_button": "Se connecter",
+    "incorrect_credentials_error": "Nom d'utilisateur ou mot de passe incorrect.",
+    "welcome_message": "Bienvenue",
+    "logout_button": "Se déconnecter",
+    "data_source_title": "Source de Données",
+    "upload_prompt": "Téléchargez votre propre CSV",
+    "upload_success": "Données téléchargées avec succès !",
+    "download_sample_data": "Télécharger un jeu de données d'exemple",
+    "home_tab": "Accueil",
+    "dashboard_tab": "Tableau de Bord",
+    "prediction_tab": "Prédiction",
+    "stats_tab": "Analyse Statistique",
+    "data_viewer_tab": "Visualiseur de Données",
+    "readme_tab": "À Propos",
+    "home_title": "Maintenance Prédictive pour Équipement Minier",
+    "project_summary_header": "🔧 Résumé du Projet : Maintenance Prédictive pour Équipement Minier",
+    "problem_statement": "📌 **Le Problème :**\nLes pannes d'équipement imprévues dans l'industrie minière entraînent de graves perturbations opérationnelles, des pertes financières et des risques accrus pour la sécurité. La maintenance est souvent réactive — effectuée uniquement après une panne — entraînant des temps d'arrêt évitables et une mauvaise allocation des ressources.",
+    "solution_statement": "💡 **La Solution :**\nCe projet propose un système de maintenance prédictive basé sur l'apprentissage automatique. En analysant les données des capteurs en temps réel (par ex. température, vibration, pression), le modèle prédit :\n\n- Si une machine risque de tomber en panne dans les 14 prochains jours,\n- Quel composant (ex. moteur, transmission, système hydraulique) est le plus à risque.",
+    "impact_statement": "🚀 **L'Impact :**\nCette approche proactive basée sur les données permet :\n\n- Une maintenance planifiée à temps pour éviter les pannes imprévues,\n- Une réduction des coûts de maintenance et de stock de pièces détachées,\n- Une meilleure disponibilité des équipements et efficacité opérationnelle,\n- Une sécurité accrue pour le personnel grâce à une détection précoce des pannes potentielles.",
+    "dashboard_header": "Tableau de Bord de la Santé de la Flotte",
+    "dashboard_filters_header": "Filtres du Tableau de Bord",
+    "machine_type_filter_label": "Filtrer par Type de Machine",
+    "manufacturer_filter_label": "Filtrer par Fabricant",
+    "age_filter_label": "Filtrer par Tranche d'Âge",
+    "kpi_header": "Indicateurs Clés de Performance",
+    "total_machines_kpi": "Total des Machines",
+    "healthy_machines_kpi": "Machines en Bonne Santé",
+    "at_risk_kpi": "Machines à Risque Élevé/Critique",
+    "fleet_overview_header": "Aperçu de la Flotte",
+    "machine_type_dist_title": "Distribution des Types de Machines",
+    "machine_age_dist_title": "Distribution de l'Âge des Machines",
+    "failure_prob_dist_title": "Distribution de la Probabilité de Panne dans la Flotte",
+    "no_data_warning": "Aucune donnée disponible pour les filtres sélectionnés.",
+    "prediction_header": "Prédictions Spécifiques à la Machine",
+    "machines_at_risk_header": "Machines à Risque de Panne",
+    "predict_component_header": "Prédire le Composant Défaillant",
+    "select_machine_prompt": "Sélectionnez l'ID de la machine dans la liste des risques",
+    "predicted_component_error": "**Composant Défaillant Prédit :**",
+    "critical_severity_warning": "**Fenêtre de Panne Prédite :** Dans les 7 prochains jours. Inspection immédiate requise.",
+    "high_severity_warning": "**Fenêtre de Panne Prédite :** Dans les 14 prochains jours. Planifiez la maintenance bientôt.",
+    "medium_severity_info": "**Recommandation :** Surveillez cette machine de près. Risque accru détecté.",
+    "no_risk_success": "Aucune machine n'est actuellement à risque de panne.",
+    "stats_header": "Analyse Statistique",
+    "select_analysis_type": "Sélectionnez le Type d'Analyse",
+    "univariate_analysis": "Analyse Univariée",
+    "bivariate_analysis": "Analyse Bivariée",
+    "linear_regression": "Régression Linéaire",
+    "select_variable_prompt": "Sélectionnez une variable",
+    "qualitative_analysis_header": "**Analyse de Variable Qualitative**",
+    "quantitative_analysis_header": "**Analyse de Variable Quantitative**",
+    "normality_analysis_header": "Analyse de Normalité",
+    "shapiro_wilk_test": "Test de Shapiro-Wilk",
+    "normality_test_success": "Les données semblent être normalement distribuées.",
+    "normality_test_warning": "Les données ne semblent pas être normalement distribuées.",
+    "bivariate_analysis_header": "Analyse Bivariée",
+    "select_first_variable": "Sélectionnez la première variable",
+    "select_second_variable": "Sélectionnez la deuxième variable",
+    "quant_vs_quant_header": "**Analyse Quantitative vs. Quantitative**",
+    "qual_vs_qual_header": "**Analyse Qualitative vs. Qualitative**",
+    "chi_square_test": "Test du Chi-carré",
+    "qual_vs_quant_analysis_header": "Analyse de {quant_var} par {qual_var}",
+    "ttest": "Test T",
+    "anova": "ANOVA",
+    "linear_regression_header": "Analyse de Régression Linéaire",
+    "select_dependent_variable": "Sélectionnez la variable dépendante (doit être quantitative)",
+    "select_independent_variables": "Sélectionnez les variables indépendantes",
+    "regression_interpretation_header": "Interprétation des Résultats de la Régression",
+    "regression_assumptions_header": "Vérification des Hypothèses de la Régression Linéaire",
+    "linearity_check": "1. Vérification de la Linéarité",
+    "homoscedasticity_check": "2. Vérification de l'Homoscédasticité",
+    "normality_of_residuals_check": "3. Vérification de la Normalité des Résidus",
+    "data_viewer_header": "À Propos des Données & Modèles",
+    "dataset_overview_header": "Aperçu du Jeu de Données",
+    "model_performance_header": "Performance du Modèle",
+    "data_dictionary_header": "Dictionnaire de Données",
+    "raw_data_explorer_header": "Explorateur de Données Brutes",
+    "readme_title": "À Propos de Ce Projet",
+    "license_header": "🛡️ Licence",
+    "license_text": "Ce projet est sous licence [MIT License](LICENSE). Vous êtes libre d'utiliser, de modifier et de partager ce projet avec une attribution appropriée.",
+
+    "about_me_header": "🌟 À Propos de Moi",
+    "about_me_text": "Bonjour ! Je suis **Brian Kimutai** — un Data Scientist, Analyste de Données et Ingénieur Données travaillant actuellement en freelance sur divers projets data. Je suis passionné par la création de solutions intelligentes basées sur les données et le partage d'informations à fort impact.",
+
+    "stay_connected_header": "☕ Restez Connecté",
+    "stay_connected_text": "Restons en contact ! N'hésitez pas à me rejoindre sur les plateformes suivantes :",
+
+    "linkedin_badge_url": "https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white",
+    "linkedin_profile_url": "https://www.linkedin.com/in/brian-kimutai-0888352b6/",
+    "portfolio_badge_url": "https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=google-chrome&logoColor=white",
+    "portfolio_url": "https://kimutai99.github.io/briankimutai.github.io/",
+    "github_badge_url": "https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white",
+    "github_profile_url": "https://github.com/kimutai99"
+  }
 }
 
 # --- LANGUAGE SELECTION ---
@@ -574,50 +603,64 @@ with tab_data_viewer:
     st.header(_("raw_data_explorer_header"))
     st.dataframe(data.head(200))
 
+
 # --- Read Me Tab ---
 with tab_readme:
     st.title(_("readme_title"))
+
     st.markdown("""
-    ### A Proactive Approach to Industrial Maintenance
+### 🔍 A Proactive Approach to Industrial Maintenance
 
-    This application is more than just a tool; it's a demonstration of a forward-thinking approach to industrial maintenance. Developed by a passionate data scientist, this project showcases how machine learning can be harnessed to prevent costly equipment failures in sectors like mining and manufacturing. By shifting from a reactive to a predictive maintenance strategy, businesses can significantly reduce downtime, optimize resource allocation, and enhance operational safety.
+This application is more than just a tool; it's a demonstration of a forward-thinking approach to industrial maintenance. Developed by a passionate data scientist, this project showcases how machine learning can be harnessed to prevent costly equipment failures in sectors like mining and manufacturing. By shifting from a reactive to a predictive maintenance strategy, businesses can significantly reduce downtime, optimize resource allocation, and enhance operational safety.
 
-    ### From Raw Data to Actionable Insights: The Technology Stack
+### 🧰 From Raw Data to Actionable Insights: The Technology Stack
 
-    **1. Interactive Front-End (Streamlit):**
-    The intuitive user interface is crafted with **Streamlit**, a powerful Python library for creating dynamic, data-driven web applications. This allows for a seamless and interactive user experience, making complex data accessible to a non-technical audience.
+**1. Interactive Front-End (Streamlit):**  
+The intuitive user interface is crafted with **Streamlit**, a powerful Python library for creating dynamic, data-driven web applications. This allows for a seamless and interactive user experience, making complex data accessible to a non-technical audience.
 
-    **2. Robust Back-End (Python & Machine Learning):**
-    The application's core is a sophisticated back-end that handles everything from data ingestion to predictive modeling:
+**2. Robust Back-End (Python & Machine Learning):**  
+The application's core is a sophisticated back-end that handles everything from data ingestion to predictive modeling:
 
-    *   **Data Manipulation & Analysis (Pandas, NumPy):** The application leverages the power of **Pandas** and **NumPy** for efficient data loading, cleaning, and transformation.
-    *   **Statistical Insights (SciPy, Statsmodels, Seaborn):** The "Statistical Analysis" tab provides a comprehensive suite of tools for in-depth data exploration, utilizing libraries like **SciPy**, **Statsmodels**, and **Seaborn** to uncover hidden patterns and correlations.
-    *   **Predictive Modeling (Scikit-learn):** The heart of the application lies in its machine learning models, built with the industry-standard **Scikit-learn** library. These models are trained to identify subtle anomalies in sensor data that are indicative of impending equipment failure.
+- **Data Manipulation & Analysis (Pandas, NumPy):** The application leverages the power of **Pandas** and **NumPy** for efficient data loading, cleaning, and transformation.
+- **Statistical Insights (SciPy, Statsmodels, Seaborn):** The "Statistical Analysis" tab provides a comprehensive suite of tools for in-depth data exploration, utilizing libraries like **SciPy**, **Statsmodels**, and **Seaborn** to uncover hidden patterns and correlations.
+- **Predictive Modeling (Scikit-learn):** The heart of the application lies in its machine learning models, built with the industry-standard **Scikit-learn** library. These models are trained to identify subtle anomalies in sensor data that are indicative of impending equipment failure.
 
-    ### Business Impact & Strategic Value
+### 📈 Business Impact & Strategic Value
 
-    This project is a tangible example of how data science can drive significant business value:
+This project is a tangible example of how data science can drive significant business value:
 
-    *   **Increased ROI:** By minimizing unplanned downtime and reducing the need for emergency repairs, predictive maintenance can lead to a substantial return on investment.
-    *   **Enhanced Safety:** Proactively addressing potential equipment failures can create a safer working environment for all personnel.
-    *   **Data-Driven Decision Making:** This tool empowers maintenance teams to make informed, data-driven decisions, moving away from guesswork and intuition.
+- **Increased ROI:** By minimizing unplanned downtime and reducing the need for emergency repairs, predictive maintenance can lead to a substantial return on investment.
+- **Enhanced Safety:** Proactively addressing potential equipment failures can create a safer working environment for all personnel.
+- **Data-Driven Decision Making:** This tool empowers maintenance teams to make informed, data-driven decisions, moving away from guesswork and intuition.
 
-    ### Core Competencies Demonstrated
+### 🧠 Core Competencies Demonstrated
 
-    This project is a testament to a diverse and in-demand skill set:
+This project is a testament to a diverse and in-demand skill set:
 
-    *   **Advanced Programming (Python):** Expertise in Python and its data science ecosystem (Pandas, NumPy, Scikit-learn, Streamlit).
-    *   **End-to-End Machine Learning:** Proficiency in the complete machine learning lifecycle, from data acquisition and feature engineering to model training, evaluation, and deployment.
-    *   **Comprehensive Statistical Analysis:** A strong foundation in both descriptive and inferential statistics, enabling a deeper understanding of the underlying data.
-    *   **Effective Data Visualization:** The ability to create compelling and informative data visualizations using libraries like **Plotly**, **Seaborn**, and **Matplotlib**.
-    *   **Modern Software Development Practices:** A solid understanding of application design, development, and deployment in a real-world context.
+- **Advanced Programming (Python):** Expertise in Python and its data science ecosystem (Pandas, NumPy, Scikit-learn, Streamlit).
+- **End-to-End Machine Learning:** Proficiency in the complete machine learning lifecycle, from data acquisition and feature engineering to model training, evaluation, and deployment.
+- **Comprehensive Statistical Analysis:** A strong foundation in both descriptive and inferential statistics, enabling a deeper understanding of the underlying data.
+- **Effective Data Visualization:** The ability to create compelling and informative data visualizations using libraries like **Plotly**, **Seaborn**, and **Matplotlib**.
+- **Modern Software Development Practices:** A solid understanding of application design, development, and deployment in a real-world context.
+""")
 
-    --- 
+    # License
+    st.markdown(f"""### {_('license_header')}
+{_('license_text')}
+""")
 
-    **Contact Information:**
+    # About Me
+    st.markdown(f"""### {_('about_me_header')}
+{_('about_me_text')}
+""")
 
-    - **Email:** [abessoloxavier45@gmail.com](mailto:abessoloxavier45@gmail.com)
-    - **WhatsApp:** [+233592308335](https://wa.me/233592308335)
-    - **YouTube:** [http://www.youtube.com/@abhasabessolo1](http://www.youtube.com/@abhasabessolo1)
-    - **GitHub:** [https://github.com/dataprofessionals237](https://github.com/dataprofessionals237)
-    """)
+    # Stay Connected
+    st.markdown(f"""### {_('stay_connected_header')}
+{_('stay_connected_text')}
+
+[![LinkedIn]({_('linkedin_badge_url')})]({_('linkedin_profile_url')})  
+
+[![Portfolio]({_('portfolio_badge_url')})]({_('portfolio_url')})  
+
+[![GitHub]({_('github_badge_url')})]({_('github_profile_url')})
+""")
