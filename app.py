@@ -13,9 +13,8 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODELS_DIR = os.path.join(BASE_DIR, "models")
 DATA_DIR = os.path.join(BASE_DIR, "data")
-IMAGE_OPERATING_PATH = os.path.join(BASE_DIR, "mining equipement operating image.jpg")
-IMAGE_FAILED_PATH = os.path.join(BASE_DIR, "failed mining equipement image.jpg")
-
+IMAGE_OPERATING_PATH = r"D:\Projects\Machine-Failure-Predictor\predictive-maintenance-insights\images\mining_equipement_operating_image.jpg"
+IMAGE_FAILED_PATH = r"D:\Projects\Machine-Failure-Predictor\predictive-maintenance-insights\images\failed_mining_equipement_image.jpg"
 # --- LANGUAGE TRANSLATIONS ---
 translations = {
     "en": {
