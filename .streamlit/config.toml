@@ -1,10 +1,32 @@
 [theme]
+# Base theme (light/dark) - using light for better data visibility
 base = "light"
-primaryColor = "#003366"
-backgroundColor = "#f9f9f9"
-secondaryBackgroundColor = "#ffffff"
-textColor = "#333333"
+
+# Primary interactive elements (buttons, highlights)
+# Google's Material Blue 600 - professional yet approachable
+primaryColor = "#1E88E5"
+
+# Main background - pure white for clean presentation
+backgroundColor = "#FFFFFF"
+
+# Sidebar/card backgrounds - subtle gray for depth
+secondaryBackgroundColor = "#F5F7FA"
+
+# Text color - dark gray (not pure black) for reduced eye strain
+textColor = "#263238"
+
+# Font - sans-serif for modern, readable UI
 font = "sans serif"
 
 [layout]
-# Add layout settings here if needed
+# Use full browser width for data displays
+wideMode = true
+
+# Mobile-friendly sidebar behavior
+initialSidebarState = "auto"
+
+# Padding around main content area
+padding = "2rem"
+
+# Center-align the main container
+containerWidth = "centered"
