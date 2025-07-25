@@ -1,0 +1,10 @@
+[theme]
+base = "light"
+primaryColor = "#003366"
+backgroundColor = "#f9f9f9"
+secondaryBackgroundColor = "#ffffff"
+textColor = "#333333"
+font = "sans serif"
+
+[layout]
+# Add layout settings here if needed
