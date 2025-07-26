@@ -1,11 +1,5 @@
 # 🛠️ Machine Failure Predictor
 
-## 🚀 **See Predictive Maintenance in Action**
-
-Explore how machine learning can transform industrial maintenance from reactive to proactive. **Machine Failure Predictor** brings real-time insights, helping industries predict equipment failures before they happen, saving costs, and improving safety.
-
-[**View the Application**](https://kimutai99-predictive-maintenance-insights-app-rwqdx4.streamlit.app/)
-
 ## 🔍 A Proactive Approach to Industrial Maintenance
 
 This application is more than just a tool; it's a demonstration of a forward-thinking approach to industrial maintenance. Developed by a passionate data scientist, this project showcases how machine learning can be harnessed to prevent costly equipment failures in sectors like mining and manufacturing. By shifting from a reactive to a predictive maintenance strategy, businesses can significantly reduce downtime, optimize resource allocation, and enhance operational safety.
@@ -46,6 +40,13 @@ This project is a tangible example of how data science can drive significant bus
 
 ---
 
+## 🚀 **See Predictive Maintenance in Action**
+
+Explore how machine learning can transform industrial maintenance from reactive to proactive. **Machine Failure Predictor** brings real-time insights, helping industries predict equipment failures before they happen, saving costs, and improving safety.
+
+[**View the Application**](https://kimutai99-predictive-maintenance-insights-app-rwqdx4.streamlit.app/)
+
+---
 ## 🛡️ License
 
 This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and share this project with proper attribution.
