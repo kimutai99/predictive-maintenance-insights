@@ -26,7 +26,7 @@ translations = {
     "password_prompt": "Password",
     "login_button": "Login",
     "incorrect_credentials_error": "Incorrect username or password.",
-    "welcome_message": "Welcome",
+    "welcome_message": "Welcome to Predictive Maintenance Insights",
     "logout_button": "Log Out",
     "data_source_title": "Data Source",
     "upload_prompt": "Upload your own CSV",
@@ -123,7 +123,7 @@ translations = {
     "password_prompt": "Mot de passe",
     "login_button": "Se connecter",
     "incorrect_credentials_error": "Nom d'utilisateur ou mot de passe incorrect.",
-    "welcome_message": "Bienvenue",
+    "welcome_message": "Bienvenue dans le Système de Maintenance Prédictive",
     "logout_button": "Se déconnecter",
     "data_source_title": "Source de Données",
     "upload_prompt": "Téléchargez votre propre CSV",
@@ -236,16 +236,16 @@ def check_password():
         st.title(_("login_title"))
         st.write(_("login_intro"))
         
-        # Updated login info display
+        # Updated login info display with capitalized credentials
         st.info("Welcome to Predictive Maintenance Insights")
-        st.info("Username: `maintenance` | Password: `predictive123`")
+        st.info("Username: `Maintenance` | Password: `Predictive123`")  # Capitalized
         
         username = st.text_input(_("username_prompt"), key="username_input")
         password = st.text_input(_("password_prompt"), type="password", key="password_input")
 
         if st.button(_("login_button")):
-            correct_username = os.environ.get("APP_USERNAME", "maintenance")
-            correct_password = os.environ.get("APP_PASSWORD", "predictive123")
+            correct_username = os.environ.get("APP_USERNAME", "Maintenance")  # Capitalized
+            correct_password = os.environ.get("APP_PASSWORD", "Predictive123")  # Capitalized
             if username == correct_username and password == correct_password:
                 st.session_state["password_correct"] = True
                 st.session_state["username_for_display"] = username
@@ -260,7 +260,7 @@ if not check_password():
     st.stop()
 
 # --- LOGOUT ---
-st.sidebar.title(f'{_("welcome_message")}, {st.session_state.get("username_for_display", "")}')
+st.sidebar.title(_("welcome_message"))
 if st.sidebar.button(_("logout_button")):
     st.session_state["password_correct"] = False
     st.rerun()
