@@ -236,6 +236,8 @@ def check_password():
         st.title(_("login_title"))
         st.write(_("login_intro"))
         
+        # Updated login info display
+        st.info("Welcome to Predictive Maintenance Insights")
         st.info("Username: `maintenance` | Password: `predictive123`")
         
         username = st.text_input(_("username_prompt"), key="username_input")
