@@ -55,3 +55,13 @@ This project is licensed under the [MIT License](LICENSE). You are free to use, 
 ## 🌟 About Me
 
 Hi there! I'm **Brian Kimutai** — a Data Scientist, Data Analyst, and Data Engineer currently freelancing on multiple data projects. I’m passionate about building smart data solution
+
+---
+
+## ☕ Stay Connected
+
+Let's stay in touch! Feel free to connect with me on the following platforms:
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brian-kimutai-0888352b6/)  
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=google-chrome&logoColor=white)](https://kimutai99.github.io/briankimutai.github.io/)  
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kimutai99)
