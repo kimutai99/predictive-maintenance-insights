@@ -2,6 +2,8 @@
 
 ## 🔍 A Proactive Approach to Industrial Maintenance
 
+[**View the Application**](https://kimutai99-predictive-maintenance-insights-app-rwqdx4.streamlit.app/)
+
 This application is more than just a tool; it's a demonstration of a forward-thinking approach to industrial maintenance. Developed by a passionate data scientist, this project showcases how machine learning can be harnessed to prevent costly equipment failures in sectors like mining and manufacturing. By shifting from a reactive to a predictive maintenance strategy, businesses can significantly reduce downtime, optimize resource allocation, and enhance operational safety.
 
 ---
