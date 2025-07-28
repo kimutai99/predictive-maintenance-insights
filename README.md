@@ -61,3 +61,27 @@ This application demonstrates how machine learning can transform industrial main
 ---
 
 ## 📂 Repository Structure  
+├── data/ # Sample datasets
+├── notebooks/ # Jupyter analysis notebooks
+├── src/
+│ ├── app.py # Streamlit application
+│ ├── models.py # ML training pipeline
+│ └── utils.py # Helper functions
+├── LICENSE
+└── README.md
+
+
+---
+
+## 👨‍💻 Author  
+**Brian Kimutai**  
+Data Scientist | ML Engineer | Industrial Analytics Specialist  
+
+[![LinkedIn](https://img.shields.io/badge/Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/brian-kimutai-0888352b6/)  
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome)](https://kimutai99.github.io/briankimutai.github.io/)  
+[![GitHub](https://img.shields.io/badge/Code-181717?style=for-the-badge&logo=github)](https://github.com/kimutai99)  
+
+---
+
+## 📜 License  
+MIT License - See [LICENSE](LICENSE) for details.
